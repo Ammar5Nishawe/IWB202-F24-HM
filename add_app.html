@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إضافة تطبيق جديد</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <button class="menu-toggle" aria-label="فتح القائمة">☰</button>
+        <nav>
+            <ul>
+                <li><a href="home.html">&quot;الرئيسية&quot;</a></li>
+                <li><a href="AboutUs.html">&quot;من نحن&quot;</a></li>
+                <li><a href="apps.html">&quot;التطبيقات&quot;</a></li>
+                <li><a href="AboutUs.html#contact">&quot;اتصل بنا&quot;</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="add-app">
+            <h2>إضافة تطبيق جديد</h2>
+            <p>املأ الحقول التالية لإضافة تطبيق جديد إلى جدول التطبيقات.</p>
+
+            <form id="add-app-form">
+                <div class="form-group">
+                    <label for="appName">اسم التطبيق</label>
+                    <input type="text" id="appName" name="appName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="developer">اسم الشركة المصنعة</label>
+                    <input type="text" id="developer" name="developer" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="url">الموقع الإلكتروني (URL)</label>
+                    <input type="url" id="url" name="url" placeholder="https://example.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="domain">مجال الاستخدام</label>
+                    <select id="domain" name="domain" required>
+                        <option value="E-Commerce">E-Commerce</option>
+                        <option value="Education">Education</option>
+                        <option value="Robotics">Robotics</option>
+                        <option value="Healthcare">Healthcare</option>
+                        <option value="Finance">Finance</option>
+                        <option value="Entertainment">Entertainment</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="isFree">هل التطبيق مجاني؟</label>
+                    <input type="checkbox" id="isFree" name="isFree">
+                </div>
+
+                <div class="form-group">
+                    <label for="description">شرح مختصر عن التطبيق</label>
+                    <textarea id="description" name="description" rows="4" required></textarea>
+                </div>
+
+                <button type="submit">إضافة التطبيق</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

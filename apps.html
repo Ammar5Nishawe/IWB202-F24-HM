@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>التطبيقات - موقعنا</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <button class="menu-toggle" aria-label="فتح القائمة">☰</button>
+        <nav>
+            <ul>
+                <li><a href="home.html">&quot;الرئيسية&quot;</a></li>
+                <li><a href="AboutUs.html">&quot;من نحن&quot;</a></li>
+                <li><a href="apps.html" class="active">&quot;التطبيقات&quot;</a></li>
+                <li><a href="AboutUs.html#contact">&quot;اتصل بنا&quot;</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="apps">
+            <h2>تطبيقات الذكاء الاصطناعي</h2>
+            <p>فيما يلي قائمة بأشهر تطبيقات الذكاء الاصطناعي المتاحة حالياً:</p>
+            <p class="left-actions"><a href="add_app.html" class="download-btn">إضافة تطبيق جديد</a></p>
+            
+            <div class="table-container">
+                <table class="ai-apps-table">
+                    <thead>
+                        <tr>
+                            <th>اسم التطبيق</th>
+                            <th>اسم الشركة المطورة</th>
+                            <th>مجال الاستخدام</th>
+                            <th>مجاني</th>
+                            <th>إظهار التفاصيل</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>ChatGPT</td>
+                            <td>OpenAI</td>
+                            <td>محادثة ذكية، كتابة محتوى، برمجة</td>
+                            <td><span class="free-status yes">✓</span></td>
+                            <td><input type="checkbox" class="details-checkbox" data-app-id="1"></td>
+                        </tr>
+                        <tr>
+                            <td>DALL-E</td>
+                            <td>OpenAI</td>
+                            <td>توليد صور من النصوص</td>
+                            <td><span class="free-status no">✗</span></td>
+                            <td><input type="checkbox" class="details-checkbox" data-app-id="2"></td>
+                        </tr>
+                        <tr>
+                            <td>Midjourney</td>
+                            <td>Midjourney, Inc.</td>
+                            <td>إنشاء صور فنية من وصف نصي</td>
+                            <td><span class="free-status no">✗</span></td>
+                            <td><input type="checkbox" class="details-checkbox" data-app-id="3"></td>
+                        </tr>
+                        <tr>
+                            <td>Google Bard</td>
+                            <td>Google</td>
+                            <td>محادثة ذكية، بحث، تحليل بيانات</td>
+                            <td><span class="free-status yes">✓</span></td>
+                            <td><input type="checkbox" class="details-checkbox" data-app-id="4"></td>
+                        </tr>
+                        <tr>
+                            <td>GitHub Copilot</td>
+                            <td>Microsoft/GitHub</td>
+                            <td>مساعدة في كتابة الكود البرمجي</td>
+                            <td><span class="free-status no">✗</span></td>
+                            <td><input type="checkbox" class="details-checkbox" data-app-id="5"></td>
+                        </tr>
+                    </tbody>
+                    <colgroup>
+                        <col style="width:20%">
+                        <col style="width:20%">
+                        <col style="width:30%">
+                        <col style="width:15%">
+                        <col style="width:15%">
+                    </colgroup>
+                </table>
+            </div>  
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

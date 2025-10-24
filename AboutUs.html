@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>من نحن - موقعنا</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <button class="menu-toggle" aria-label="فتح القائمة">☰</button>
+        <nav>
+            <ul>
+                <li><a href="home.html">&quot;الرئيسية&quot;</a></li>
+                <li><a href="AboutUs.html" class="active">&quot;من نحن&quot;</a></li>
+                <li><a href="apps.html">&quot;التطبيقات&quot;</a></li>
+                <li><a href="#contact">&quot;اتصل بنا&quot;</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>من نحن</h2>
+            <p>نحن فريق متخصص في تطوير مواقع الويب باستخدام أحدث التقنيات.</p>
+            
+            <div class="team-info">
+                <h3>فريقنا</h3>
+                <p>يتكون فريقنا من مجموعة من المطورين والمصممين ذوي الخبرة في مجال تطوير الويب. نعمل معاً لتقديم أفضل الحلول التقنية لعملائنا.</p>
+                
+                <h3>رؤيتنا</h3>
+                <p>نسعى لأن نكون الشركة الرائدة في مجال تطوير الويب في المنطقة، من خلال تقديم خدمات عالية الجودة وحلول مبتكرة.</p>
+                
+                <h3>مهمتنا</h3>
+                <p>مساعدة الشركات والأفراد على تحقيق أهدافهم من خلال تطوير مواقع ويب وتطبيقات متميزة تلبي احتياجاتهم وتتجاوز توقعاتهم.</p>
+                
+                <h3>قيمنا</h3>
+                <ul>
+                    <li>الجودة والإتقان في العمل</li>
+                    <li>الابتكار والإبداع</li>
+                    <li>الالتزام بالمواعيد</li>
+                    <li>التطوير المستمر</li>
+                    <li>رضا العملاء</li>
+                </ul>
+            </div>
+        </section>
+
+                <section id="contact">
+            <h2>اتصل بنا</h2>
+            <form id="contact-form" aria-label="نموذج الاتصال">
+                <div class="form-group">
+                    <label for="name">الاسم:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">البريد الإلكتروني:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">الرسالة:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">إرسال</button>
+            </form>
+        </section>
+        
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
